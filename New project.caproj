@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2hkauew1rz7zt</unique-id>
-    <saved-with-version>23300</saved-with-version>
+    <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -78,14 +78,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="Sprite5" sid="110775306901046">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465288643630470" speed="5">
+=======
+        <object-type name="Sprite5" sid="160203960134648">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134466977662894" speed="5">
+>>>>>>> 75a0a6897c18159da3f75dbe62256339f15634b0
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="Background" sid="300121585570178">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\BG\BG.png" />
@@ -194,6 +202,8 @@
                 </animation>
             </animation-folder>
         </object-type>
+=======
+>>>>>>> 75a0a6897c18159da3f75dbe62256339f15634b0
     </object-folder>
     <families />
     <layout-folder>
