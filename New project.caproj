@@ -11,8 +11,14 @@
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -69,6 +75,122 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195240837610237" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="110775306901046">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465288643630470" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background" sid="300121585570178">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\BG\BG.png" />
+        </object-type>
+        <object-type name="Plataforma1" sid="255490963703197">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="597865518064705">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\Tiles\2.png" />
+        </object-type>
+        <object-type name="RedBall" sid="309562902185885">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="570086858648239">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="352959408556964">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="846294515758744">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831212941439121" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\Redball\Personagem.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="0.971429" y="0.5" />
+                            <point x="0.828571" y="0.828571" />
+                            <point x="0.5" y="0.971429" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="368331503792807">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392976891480211" speed="5">
+                    <frame duration="1" hotspotX="0.501529" hotspotY="0.5" original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\Redball\Espinhos.png">
+                        <collision-poly>
+                            <point x="0.0183486" y="0.111111" />
+                            <point x="0.498471" y="0.444444" />
+                            <point x="0.926606" y="0.444444" />
+                            <point x="0.990826" y="0.5" />
+                            <point x="0.972477" y="0.833333" />
+                            <point x="0.498471" y="1" />
+                            <point x="0.0275229" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="182441951557964">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="764231089623403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arvore" sid="915650186924847">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305715220895619" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501661" original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\Object\Tree_2.png">
+                        <collision-poly>
+                            <point x="0.141844" y="0.13289" />
+                            <point x="0.5" y="0.0265781" />
+                            <point x="0.829787" y="0.159468" />
+                            <point x="0.950355" y="0.498339" />
+                            <point x="0.574468" y="0.601329" />
+                            <point x="0.5" y="1" />
+                            <point x="0.432624" y="0.594684" />
+                            <point x="0.131206" y="0.498339" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pedra" sid="294598091997479">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730365720757959" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\MATHEUSLONGOTEIXEIRA\Desktop\Fatec\TilesFaculdade\Object\Stone.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.333333" />
+                            <point x="0.5" y="0.0185185" />
+                            <point x="0.833333" y="0.277778" />
+                            <point x="0.922222" y="0.5" />
+                            <point x="0.988889" y="0.981481" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0111111" y="0.981481" />
+                            <point x="0.1" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
